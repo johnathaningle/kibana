@@ -20,7 +20,7 @@
 import React, { useCallback } from 'react';
 import { EuiPanel, EuiTextArea } from '@elastic/eui';
 import { VisEditorOptionsProps } from "../../../../src/plugins/visualizations/public"
-import { SwitchOption, SelectOption, NumberInputOption } from '../../../../src/plugins/charts/public';
+import { SwitchOption, SelectOption, NumberInputOption } from '../../../../src/plugins/vis_default_editor/public';
 import { FunnelVisParams } from '../types';
 
 export function FunnelVisOption({
@@ -56,7 +56,7 @@ export function FunnelVisOption({
         label='Select aggregation type:'
         options={aggTypeOptions}
         paramName="sumOption"
-        value={stateParams.sumOption}
+        value={stateParams.sumOption ?? '0'} 
         setValue={setValue}
       />
       
@@ -101,7 +101,7 @@ export function FunnelVisOption({
         label='Min height'
         min={1}
         paramName="minHeight"
-        value={stateParams.funnelOptions.block.minHeight}
+        value={stateParams.funnelOptions.block.minHeight ?? 100}
         setValue={(paramName, value) =>
           setFunnelOptionsValue('block', { ...stateParams.funnelOptions.block, [paramName]: value })
         }
