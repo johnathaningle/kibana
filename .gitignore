@@ -41,7 +41,6 @@ types.eslint.config.js
 
 /html_docs
 .eslintcache
-/plugins/
 /data
 disabledPlugins
 webpackstats.json
