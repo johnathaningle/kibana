@@ -1,0 +1,16 @@
+{
+  "id": "obkbFunnel",
+  "version": "7.17.16",
+  "kibanaVersion": "7.17.16",
+  "server": true,
+  "ui": true,
+  "requiredPlugins": [
+    "visualizations",
+    "charts",
+    "data",
+    "visDefaultEditor"
+  ],
+  "owner": {
+    "name": "obkbFunnel"
+  }
+}

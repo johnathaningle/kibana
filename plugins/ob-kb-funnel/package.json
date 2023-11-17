@@ -1,0 +1,23 @@
+{
+  "name": "ob-kb-funnel",
+  "version": "7.8.1",
+  "description": "Visualization of a funnel in Kibana",
+  "license": "MIT",
+  "main": "index.js",
+  "kibana": {
+    "version": "7.8.1",
+    "templateVersion": "1.0.0"
+  },
+  "dependencies": {
+    "numeral": "1.5.3",
+    "d3-funnel": "^1.2.0"
+  },
+  "build": {
+    "git": {
+      "count": "58",
+      "sha": "4b59130",
+      "date": "Sat, 25 Jul 2020 18:16:13 +0200"
+    },
+    "date": "Tue Jul 28 2020 09:39:29 GMT+0200 (Central European Summer Time)"
+  }
+}
